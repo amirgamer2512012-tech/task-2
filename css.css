@@ -1,0 +1,186 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation Bar */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Brand & Logo Styling */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.mall-title {
+    font-size: 24px;
+    color: #1a252f;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9ecef;
+}
+
+.hero-section h2 {
+    font-size: 32px;
+    color: #1a252f;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+/* Stores Section */
+.stores-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.stores-section h2 {
+    font-size: 28px;
+    color: #1a252f;
+    margin-bottom: 30px;
+}
+
+/* تكبير كروت المحلات لملء الصفحة بشكل أفضل */
+.store-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 800px; /* تم زيادة العرض الأقصى للكرت */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.store-card:hover {
+    transform: translateY(-5px);
+}
+
+.store-card h3 {
+    font-size: 26px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.store-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* تكبير صور المحلات */
+.store-card img {
+    width: 100%;
+    height: 400px; /* تم زيادة الارتفاع بشكل ملحوظ لتبدو الصورة كبيرة وواضحة */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a252f;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a252f;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 40px;
+}
